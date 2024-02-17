@@ -1,0 +1,31 @@
+.navbar {
+    width: 1240px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+        width: 210.32px;
+        height: 68px;
+        margin-top: 20px;
+    }
+    &-link {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        width: 309px;
+        height: 80px;
+    }
+    &-accueil, &-apropos {
+        font-size: 24px;
+        font-weight: 500;
+        padding-top: 40px;
+        text-decoration: none;
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        &:hover {
+            cursor: pointer;
+            border-bottom: 2px black solid;
+        }
+    }
+}
