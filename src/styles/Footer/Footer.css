@@ -1,0 +1,17 @@
+.footer {
+  width: 1440px;
+  height: 209px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-img {
+  width: 122px;
+  height: 39.5px;
+}
+.footer-h3 {
+  font-size: 24px;
+  font-weight: 500;
+}/*# sourceMappingURL=Footer.css.map */

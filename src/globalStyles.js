@@ -9,7 +9,11 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: Montserra;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .display-none {
+    display: none
   }
 `;
  

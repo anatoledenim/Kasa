@@ -1,7 +1,11 @@
+import BackgroundPanel from "../../components/Banner"
+import DisplayHousings from "../../components/DisplayHousings"
+
 function Accueil() {
     return (
         <div>
-            <h1>Hello, world.</h1>
+            <BackgroundPanel/>
+            <DisplayHousings/>
         </div>
     )
 }

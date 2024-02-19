@@ -1,0 +1,35 @@
+.display-housings {
+    width: 1240px;
+    height: auto;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    &-card {
+        position: relative;
+        z-index: 0;
+        width: 340px;
+        height: 340px;
+        border-radius: 25px;
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-left: 30px;
+        }
+        &-title {
+
+            position: absolute;
+            z-index: 1;
+            bottom: 0px;
+            left: 45px;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+}

@@ -12,7 +12,7 @@ import '../../styles/Header/Header.css'
 //     }
 // }
 
-const accueilLink = <Link to={"/accueil"} className='navbar-accueil'>Accueil</Link>
+const accueilLink = <Link to={"/"} className='navbar-accueil'>Accueil</Link>
 const aproposLink = <Link to={"/a-propos"} className='navbar-apropos'>A propos</Link>
 
 function Header() {
