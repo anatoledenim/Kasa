@@ -8,12 +8,18 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-family: "Montserrat", sans-serif;
   }
 
+  #root {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
   .display-none {
-    display: none
+    display: none;
   }
 `;
  

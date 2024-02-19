@@ -15,6 +15,7 @@
   width: 340px;
   height: 340px;
   border-radius: 25px;
+  margin-left: 27px;
 }
 .display-housings-card-img {
   width: 100%;
@@ -22,7 +23,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
-  margin-left: 30px;
 }
 .display-housings-card-title {
   position: absolute;
