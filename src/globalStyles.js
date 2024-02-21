@@ -21,6 +21,13 @@ const GlobalStyle = createGlobalStyle`
   .display-none {
     display: none;
   }
+
+  .apropos-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
  
 export default GlobalStyle;

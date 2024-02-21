@@ -1,13 +1,10 @@
-// import styled from 'styled-components'
 import '../../styles/Banner/Banner.css'
-import backgroundImageAccueil from '../../assets/backgroundImageAccueil.png'
-// import backgroundImageApropos from '../../assets/backgroundImageApropos.png'
 
-function BackgroundPanel() {
+function BackgroundPanel(props) {
     return (
             <div className='banner'>
-                <img className='banner-img' src={backgroundImageAccueil} alt="paysage de bannière"/>
-                <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
+                <img className='banner-img' src={props.src} alt={props.alt}/>
+                <h1 className='banner-title'>{props.title}</h1>
             </div>
             )
 }

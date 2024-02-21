@@ -1,0 +1,48 @@
+.folding-menu {
+  margin-bottom: 40px;
+}
+.folding-menu-first-section {
+  position: relative;
+  width: 1023px;
+  min-height: 52px;
+  background-color: #FF6060;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.folding-menu-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 15px;
+  padding-top: 13px;
+}
+.folding-menu-arrow {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  transition: all 300ms;
+}
+.folding-menu-arrow:hover {
+  cursor: pointer;
+}
+.folding-menu-second-section {
+  position: relative;
+  margin: 0;
+  width: 1020px;
+  border-radius: 5px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  transition: all 300ms;
+  overflow: hidden;
+}
+.folding-menu-description {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 67px;
+  padding: 20px;
+  margin: 0;
+  font-size: 18px;
+  animation: all 500ms both;
+}/*# sourceMappingURL=FoldingMenu.css.map */

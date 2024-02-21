@@ -1,0 +1,61 @@
+.folding-menu {
+    margin-bottom: 40px;
+    &-first-section {
+        position: relative;
+        width: 1023px;
+        min-height: 52px;
+        background-color: #FF6060;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    &-title {
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        margin-left: 15px;
+        padding-top: 13px;
+    }
+    &-arrow {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        // animation: reverse-arrow 200ms ease-in-out both;
+        // animation-play-state: paused;
+        transition: all 300ms;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-second-section {
+        position: relative;
+        margin: 0;
+        width: 1020px;
+        border-radius: 5px;
+        background-color: #F6F6F673;
+        transition: all 300ms;
+        overflow: hidden;
+    }
+    &-description {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 67px;
+        padding: 20px;
+        margin: 0;
+        font-size: 18px;
+        // transform: translateY(-80px);
+        animation: all 500ms both;
+    }
+    // @keyframes slide-down {
+    //     from {
+    //         transform: translateY(-80px);
+    //         opacity: 0;
+    //     }
+    //     to {
+    //         transform: translateY(0px);
+    //         opacity: 1;
+    //     }
+    // }
+}
