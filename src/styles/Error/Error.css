@@ -1,0 +1,26 @@
+.error-div {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.error-div-title {
+  margin: 0;
+  margin-top: 50px;
+  font-size: 288px;
+  font-weight: 700;
+  color: #FF6060;
+}
+.error-div-subtitle {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+.error-div-link {
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}/*# sourceMappingURL=Error.css.map */

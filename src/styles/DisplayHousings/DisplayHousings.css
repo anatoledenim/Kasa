@@ -28,7 +28,8 @@
   position: absolute;
   z-index: 1;
   bottom: 0px;
-  left: 45px;
+  left: 10px;
+  padding-right: 5px;
   font-size: 18px;
   font-weight: 700;
   color: white;
