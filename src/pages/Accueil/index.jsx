@@ -17,14 +17,13 @@ function Accueil() {
     }
     fetchDatas('/housings.json')
 }, [])
-    console.log(datas);
     return (
         <div>
             <BackgroundPanel src = {backgroundImageAccueil} title = "Chez vous, partout et ailleurs" alt = "paysage de bannière page accueil"/>
             <div className="display-housings">
                 {isLoading && <h1>Les logements chargent...</h1>}
                 {datas.map((data) => 
-                datas && <DisplayHousings key={data.id} house={data}/>
+                datas && <DisplayHousings key={data.id} house={data} id={data.id}/>
                 )}
             </div>
         </div>

@@ -1,17 +1,21 @@
+import { useState } from 'react'
 import arrow from '../../assets/arrow.png'
 import '../../styles/FoldingMenu/FoldingMenu.css'
-import './FoldingMenu'
 
-function FoldingMenu(props) {
+function FoldingMenu({title, children}) {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <div className="folding-menu">
             <div className='folding-menu-first-section'>
-                <h1 className='folding-menu-title'>{props.title}</h1>
-                <img className='folding-menu-arrow' src={arrow} alt='flèche pour dérouler le menu'/>
+                <h1 className='folding-menu-title'>{title}</h1>
+                <img className='folding-menu-arrow' src={arrow} alt='flèche pour dérouler le menu' onClick={()=>setIsOpen(!isOpen)}/>
             </div>
-            <div className='folding-menu-second-section'>
-                <p className='folding-menu-description'>{props.description}</p>
-            </div>
+            {isOpen && (
+                <div className='folding-menu-second-section'>
+                    <p className='folding-menu-description'>{children}</p>
+                </div>
+            )
+        }
         </div>
     )
 } 

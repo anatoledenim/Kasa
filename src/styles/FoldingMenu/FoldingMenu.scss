@@ -28,16 +28,13 @@
         }
     }
     &-second-section {
-        position: relative;
         margin: 0;
         width: 1020px;
         border-radius: 5px;
         background-color: #F6F6F673;
         transition: all 300ms;
-        overflow: hidden;
     }
     &-description {
-        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
