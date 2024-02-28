@@ -1,6 +1,7 @@
 import BackgroundPanel from "../../components/Banner"
 import backgroundImageApropos from '../../assets/backgroundImageApropos.png'
 import FoldingMenu from "../../components/FoldingMenu"
+import '../../styles/Apropos/Apropos.css'
 
 const datas = [
     {title: "Fiabilité",
@@ -21,9 +22,11 @@ function Apropos() {
     return (
         <div className="apropos-section"> 
             <BackgroundPanel src = {backgroundImageApropos} title = "" alt = "paysage de bannière page a propos"/>
+            <div className="div-folding-menu">
             {datas.map((data) =>
             <FoldingMenu title={data.title} children={data.content}/>
             )}
+            </div>
         </div>
     )
 }

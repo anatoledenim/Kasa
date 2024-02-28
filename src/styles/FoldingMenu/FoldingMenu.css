@@ -3,7 +3,7 @@
 }
 .folding-menu-first-section {
   position: relative;
-  width: 1023px;
+  width: 100%;
   min-height: 52px;
   background-color: #FF6060;
   border-radius: 5px;
@@ -28,16 +28,13 @@
 }
 .folding-menu-second-section {
   margin: 0;
-  width: 1020px;
+  width: 100%;
   border-radius: 5px;
   background-color: rgba(246, 246, 246, 0.4509803922);
   transition: all 300ms;
 }
 .folding-menu-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 67px;
+  width: 100%;
   padding: 20px;
   margin: 0;
   font-size: 18px;

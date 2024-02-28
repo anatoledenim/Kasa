@@ -1,0 +1,85 @@
+.pic {
+  border-radius: 10px;
+  width: 1240px;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 25px;
+}
+
+.div {
+  width: 1240px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.div-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FF6060;
+}
+.div-location {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+.div-host {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.div-name {
+  width: 93px;
+  text-wrap: wrap;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+  padding-right: 0px;
+}
+.div-pic {
+  width: 64px;
+  height: 64px;
+  border-radius: 30px;
+}
+.div-2 {
+  width: 1240px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.div-tag-section {
+  width: auto;
+  height: 25px;
+  display: flex;
+  gap: 10px;
+}
+.div-tag {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 115px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  color: white;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+.div-3 {
+  width: 1240px;
+  display: flex;
+  justify-content: space-between;
+}
+.div-folding-menu-small {
+  width: 582px;
+}
+.div-folding-menu-small-equipments {
+  list-style: none;
+}/*# sourceMappingURL=Logement.css.map */

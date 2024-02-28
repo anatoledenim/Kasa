@@ -1,26 +1,62 @@
 import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import {useNavigate, useParams} from "react-router-dom"
+// import Rating from "../../components/Rating"
+import FoldingMenu from '../../components/FoldingMenu'
+import '../../styles/Logement/Logement.css'
 
 function Logements() {
-    const [datas, setDatas] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
+    const [logement, setLogement] = useState([])
     let {id} = useParams()
+    const navigate = useNavigate();
     useEffect(() => {
-    async function fetchDatas(url) {
-        const response = await fetch(url)
-        const houses = await response.json()
-        setDatas(houses)
-        setIsLoading(false)
-    }
-    fetchDatas('/housings.json')
-}, [id])
-    let logement = datas.find((element) => element === id)
-    console.log(id)
+        async function fetchDatas(url) {
+            const response = await fetch(url)
+            const houses = await response.json()
+            let logementData = houses.find((element) => element.id === id)
+            if (!logementData) {
+                navigate('/page-not-found')
+                return;
+            }
+            setLogement(logementData);
+        }
+        fetchDatas('/housings.json')
+    },[id, navigate])
+
     return (
         <div>
-            {!isLoading && <h1>La parge se charge...</h1>}
-            <div>
-                <h1>Page de Logement monsieur</h1>
+            {!logement && (
+                <div>Chargement en cours....</div>
+            )}
+            <div className="section">
+                <img className="pic" src={logement.cover} alt="cover de logement"/>
+                <div className="div">
+                    <div>
+                        <h1 className="div-title">{logement.title}</h1>
+                        <h2 className="div-location">{logement.location}</h2>
+                    </div>
+                    <div className="div-host">
+                        <p className="div-name">{logement.host.name}</p>
+                        <img className="div-pic" src={logement.host.picture} alt="propietaire"/>
+                    </div>
+                </div>
+                <div className="div-2">
+                    <div className="div-tag-section">
+                        {(logement.tags).map((tag) =>
+                        <li key={tag} className="div-tag">{tag}</li>
+                        )}
+                    </div>
+                {/* <Rating rating = {logement.rating}/>  */}
+                </div>
+                <div className="div-3">
+                    <div className="div-folding-menu-small">
+                        <FoldingMenu title="Description" children={logement.description}/>
+                    </div>
+                    <div className="div-folding-menu-small">
+                        <FoldingMenu title="Equipement" children={logement.equipments.map((equipement, i) =>
+                        <li className="div-folding-menu-small-equipments" key={'equipement-' + i}>{equipement}</li>
+                        )}/>
+                    </div>
+                </div>
             </div>
         </div>
     )
