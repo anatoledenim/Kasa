@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import {useNavigate, useParams} from "react-router-dom"
-// import Rating from "../../components/Rating"
+import Carousel from "../../components/Carousel"
+import Rating from "../../components/Rating"
 import FoldingMenu from '../../components/FoldingMenu'
 import '../../styles/Logement/Logement.css'
 
@@ -24,11 +25,12 @@ function Logements() {
 
     return (
         <div>
-            {!logement && (
+            {!logement ? (
                 <div>Chargement en cours....</div>
-            )}
+            )
+            :   
             <div className="section">
-                <img className="pic" src={logement.cover} alt="cover de logement"/>
+                <Carousel images={logement.pictures}/>
                 <div className="div">
                     <div>
                         <h1 className="div-title">{logement.title}</h1>
@@ -45,7 +47,7 @@ function Logements() {
                         <li key={tag} className="div-tag">{tag}</li>
                         )}
                     </div>
-                {/* <Rating rating = {logement.rating}/>  */}
+                <Rating rating = {logement.rating}/> 
                 </div>
                 <div className="div-3">
                     <div className="div-folding-menu-small">
@@ -57,7 +59,7 @@ function Logements() {
                         )}/>
                     </div>
                 </div>
-            </div>
+            </div> }
         </div>
     )
 }
