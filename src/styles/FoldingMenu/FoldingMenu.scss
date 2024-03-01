@@ -24,20 +24,57 @@
         &:hover {
             cursor: pointer;
         }
+        &-reverse {
+            position: absolute;
+            right: 15px;
+            top: 20px;
+            transform: rotate(-180deg);
+            transition: all 300ms;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
     &-second-section {
-        margin: 0;
-        width: 100%;
-        border-radius: 5px;
-        background-color: #F6F6F673;
-        display: none;
-        transition: all 300ms;
+        position: relative;
+                margin: 0;
+                width: 100%;
+                height: 0px;
+                overflow: hidden;
+                border-radius: 5px;
+                background-color: #F6F6F673;
+                transition: all 300ms;
+                display: flex;
+                align-items: center;
+            &-slide {
+                position: relative;
+                margin: 0;
+                width: 100%;
+                height: 130px;
+                overflow: visible;
+                border-radius: 5px;
+                background-color: #F6F6F673;
+                transition: all 300ms;
+                display: flex;
+                align-items: center;
+        }
     }
     &-description {
-        width: 100%;
-        padding: 20px;
-        margin: 0;
-        font-size: 18px;
-        animation: all 500ms both;
+        position: absolute;
+            opacity: 0;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            left: 20px;
+            transition: all 1000ms;
+        &-fade {
+            position: absolute;
+            opacity: 1;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            left: 20px;
+            transition: all 1000ms;
+        }
     }
 }
