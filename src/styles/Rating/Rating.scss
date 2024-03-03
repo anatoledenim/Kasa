@@ -3,15 +3,12 @@
     height: 36px;
     display: flex;
     justify-content: space-between;
-    border: solid 2px red;
     &-full-star {
         width: 36px;
         height: 36px;
-        border: solid 2px red;
     }
     &-empty-star {
         width: 36px;
         height: 36px;
-        border: solid 2px red;
     }
 }

@@ -13,16 +13,40 @@
      object-fit: cover;
   border-radius: 25px;
 }
+.carousel-pic-pic-slide-left {
+  width: 1240px;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  transform: translateX(-100%);
+  transition: transform 350ms;
+}
+.carousel-pic-pic-slide-right {
+  width: 1240px;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  transform: translateX(100%);
+  transition: transform 350ms;
+}
 .carousel-arrow-left {
   position: absolute;
   top: 212px;
   cursor: pointer;
+}
+.carousel-arrow-left-hidden {
+  display: none;
 }
 .carousel-arrow-right {
   position: absolute;
   top: 208px;
   right: 0px;
   cursor: pointer;
+}
+.carousel-arrow-right-hidden {
+  display: none;
 }
 .carousel-index {
   position: absolute;
@@ -31,4 +55,7 @@
   color: white;
   bottom: 5px;
   left: 600px;
+}
+.carousel-index-hidden {
+  display: none;
 }/*# sourceMappingURL=Carousel.css.map */

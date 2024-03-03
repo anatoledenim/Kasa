@@ -3,15 +3,12 @@
   height: 36px;
   display: flex;
   justify-content: space-between;
-  border: solid 2px red;
 }
 .rating-full-star {
   width: 36px;
   height: 36px;
-  border: solid 2px red;
 }
 .rating-empty-star {
   width: 36px;
   height: 36px;
-  border: solid 2px red;
 }/*# sourceMappingURL=Rating.css.map */

@@ -10,17 +10,39 @@
         height: 415px;
         object-fit: cover;
         border-radius: 25px;
+        &-pic-slide-left {
+            width: 1240px;
+            height: 415px;
+            object-fit: cover;
+            border-radius: 25px;
+            transform: translateX(-100%);
+            transition: transform 350ms;
+        }
+        &-pic-slide-right {
+            width: 1240px;
+            height: 415px;
+            object-fit: cover;
+            border-radius: 25px;
+            transform: translateX(100%);
+            transition: transform 350ms;
+        }
     }
     &-arrow-left {
         position: absolute;
         top: 212px;
         cursor: pointer;
+        &-hidden {
+            display: none;
+        }
     }
     &-arrow-right {
         position: absolute;
         top: 208px;
         right: 0px;
         cursor: pointer;
+        &-hidden {
+            display: none;
+        }
     }
     &-index {
         position: absolute;
@@ -29,5 +51,8 @@
         color: white;
         bottom: 5px;
         left: 600px;
+        &-hidden {
+            display: none;
+        }
     }
 }
