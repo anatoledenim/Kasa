@@ -1,5 +1,5 @@
 .div {
-  width: 1240px;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -73,4 +73,20 @@
 }
 .div-folding-menu-small-equipments {
   list-style: none;
+}
+
+@media screen and (max-width: 375px) {
+  .section {
+    width: 335px;
+  }
+  .div {
+    width: 100%;
+    padding: 0;
+  }
+  .div-title {
+    font-size: 18px;
+  }
+  .div-location {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Logement.css.map */

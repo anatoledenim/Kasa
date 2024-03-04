@@ -1,5 +1,5 @@
 .div {
-    width: 1240px;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -71,6 +71,22 @@
         width: 582px;
         &-equipments {
             list-style: none;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section {
+        width: 335px;
+    }
+    .div {
+        width: 100%;
+        padding: 0;
+        &-title {
+            font-size: 18px;
+        }
+        &-location {
+            font-size: 14px;
         }
     }
 }
