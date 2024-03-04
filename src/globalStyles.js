@@ -12,7 +12,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    width: 1440px;
+    max-width: 1240px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center

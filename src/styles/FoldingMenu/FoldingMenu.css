@@ -4,7 +4,7 @@
 .folding-menu-first-section {
   position: relative;
   width: 100%;
-  min-height: 52px;
+  height: 52px;
   background-color: #FF6060;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -52,7 +52,7 @@
   position: relative;
   margin: 0;
   width: 100%;
-  height: 130px;
+  height: 200px;
   overflow: visible;
   border-radius: 5px;
   background-color: rgba(246, 246, 246, 0.4509803922);
@@ -72,9 +72,42 @@
 .folding-menu-description-fade {
   position: absolute;
   opacity: 1;
-  width: 100%;
+  width: 90%;
   font-size: 18px;
   font-weight: 400;
   left: 20px;
   transition: all 1000ms;
+}
+
+@media screen and (max-width: 375px) {
+  .folding-menu {
+    margin-bottom: 20px;
+  }
+  .folding-menu-first-section {
+    height: 30px;
+  }
+  .folding-menu-title {
+    padding-top: 7px;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .folding-menu-arrow {
+    width: 16px;
+    height: 9.14px;
+    top: 10px;
+  }
+  .folding-menu-arrow-reverse {
+    width: 16px;
+    height: 9.14px;
+    top: 10px;
+  }
+  .folding-menu-second-section-slide {
+    height: 100px;
+  }
+  .folding-menu-description {
+    font-size: 10px;
+  }
+  .folding-menu-description-fade {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=FoldingMenu.css.map */

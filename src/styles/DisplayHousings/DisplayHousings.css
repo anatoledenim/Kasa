@@ -1,5 +1,5 @@
 .display-housings {
-  width: 1240px;
+  width: 100%;
   height: auto;
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -14,7 +14,7 @@
   z-index: 0;
   width: 340px;
   height: 340px;
-  border-radius: 25px;
+  border-radius: 10px;
   margin-left: 27px;
 }
 .display-housings-card-img {
@@ -22,7 +22,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 .display-housings-card-title {
   position: absolute;
@@ -33,4 +33,19 @@
   font-size: 18px;
   font-weight: 700;
   color: white;
+}
+
+@media screen and (max-width: 375px) {
+  .display-housings {
+    width: 335px;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 0px;
+    padding-bottom: 25px;
+    background-color: white;
+  }
+  .display-housings-card {
+    width: 100%;
+    height: 255px;
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=DisplayHousings.css.map */

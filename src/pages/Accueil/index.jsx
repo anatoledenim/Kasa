@@ -3,6 +3,7 @@ import BackgroundPanel from "../../components/Banner"
 import DisplayHousings from "../../components/DisplayHousings"
 import backgroundImageAccueil from '../../assets/backgroundImageAccueil.png'
 import '../../styles/DisplayHousings/DisplayHousings.css'
+import '../../styles/Accueil/Accueil.css'
 
 
 function Accueil() {
@@ -18,7 +19,7 @@ function Accueil() {
     fetchDatas('/housings.json')
 }, [])
     return (
-        <div>
+        <div className="div-accueil">
             <BackgroundPanel src = {backgroundImageAccueil} title = "Chez vous, partout et ailleurs" alt = "paysage de bannière page accueil"/>
             <div className="display-housings">
                 {isLoading && <h1>Les logements chargent...</h1>}

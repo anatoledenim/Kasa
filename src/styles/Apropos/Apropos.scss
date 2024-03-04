@@ -1,3 +1,11 @@
 .div-folding-menu {
     width: 1023px;
+    height: auto;
+}
+
+@media screen and (max-width: 375px) {
+    .div-folding-menu {
+        width: 100%;
+        height: auto;
+    }
 }

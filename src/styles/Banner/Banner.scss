@@ -2,12 +2,11 @@
     position: relative;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 1240px;
+    width: 100%;
     height: 223px;
     z-index: 0;
     border-radius: 25px;
     box-shadow: 0px 4px 4px 0px #00000040;
-
     &-img {
         width: 100%;
         height: 100%;
@@ -15,7 +14,6 @@
         opacity: 0.6px;
         object-fit: cover;
         filter: brightness(50%);
-        
     }
     &-title {
         position: absolute;
@@ -28,5 +26,24 @@
         z-index: 1;
         text-shadow: 1px 1px 3px black;
         border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        width: 335px;
+        height: 111px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        &-img {
+            border-radius: 10px;
+        }
+        &-title {
+            font-size: 24px;
+            text-wrap: wrap;
+            left: 20px;
+            top: 30px;
+        }
     }
 }

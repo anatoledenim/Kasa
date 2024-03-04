@@ -1,5 +1,5 @@
 .navbar {
-    width: 1240px;
+    width: 100%;
     height: 68px;
     display: flex;
     justify-content: space-between;
@@ -26,6 +26,33 @@
         &:hover {
             cursor: pointer;
             border-bottom: 2px black solid;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar {
+        margin: 0;
+        padding: 0;
+        width: 335px;
+        height: 47px;
+        &-logo {
+            width: 145px;
+            height: 46.88px;
+            margin: 0;
+        }
+        &-link {
+            width: 120px;
+            height: 17px;
+        }
+        &-accueil, &-apropos {
+            width: 55px;
+            font-size: 12px;
+            padding: 0;
+        }
+        &-accueil {
+            width: 45px;
+            margin-right: 10px;
         }
     }
 }
