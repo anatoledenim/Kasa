@@ -1,24 +1,39 @@
+.section{
+    width: 1240px;
+    &-1 {
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
 .div {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding-bottom: 15px;
     &-title {
         font-size: 24px;
         font-weight: 500;
         color: #FF6060;
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 0px;
     }
     &-location {
         font-size: 18px;
         font-weight: 500;
         color: black;
+        margin-bottom: 20px;
     }
     &-host {
         display: flex;
         align-items: center;
         width: auto;
+        margin-bottom: 10px;
     }
     &-name {
         width: 93px;
@@ -37,8 +52,9 @@
         width: 1240px;
         height: auto;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
         padding-bottom: 35px;
     }
     &-tag-section {
@@ -64,6 +80,7 @@
     }
     &-3 {
         width: 1240px;
+        height: auto;
         display: flex;
         justify-content: space-between;
     }
@@ -78,15 +95,56 @@
 @media screen and (max-width: 375px) {
     .section {
         width: 335px;
+        &-1 {
+            flex-direction: column;
+        }
     }
     .div {
         width: 100%;
+        height: 140px;
         padding: 0;
         &-title {
             font-size: 18px;
         }
         &-location {
             font-size: 14px;
+        }
+        &-tag-section {
+            width: 100%;
+            display: flex;
+        }
+        &-tag {
+            min-width: 84px;
+            height: 22px;
+            font-size: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+
+        }
+        &-2 {
+            width: 100%;
+            padding: 0;
+            margin-top: 10px;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        &-host {
+            width: 135.5px;
+            height: 33px;
+        }
+        &-name {
+            font-size: 12px;
+        }
+        &-pic {
+            width: 32px;
+            height: 32px;
+        }
+        &-3 {
+            width: 100%;
+            flex-direction: column;
+        }
+        &-folding-menu-small {
+            width: 100%;
         }
     }
 }

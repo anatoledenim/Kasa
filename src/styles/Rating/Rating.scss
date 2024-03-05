@@ -12,3 +12,17 @@
         height: 36px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .rating {
+        width: 98px;    
+        &-full-star {
+            width: 18px;
+            height: 18px;
+        }
+        &-empty-star {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

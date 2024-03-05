@@ -29,23 +29,23 @@ function Logements() {
             {isLoading ? <div>Chargement en cours....</div> :
                 (<div className="section">
                     <Carousel images={logement.pictures}/>
-                    <div className="div">
-                        <div>
-                            <h1 className="div-title">{logement.title}</h1>
-                            <h2 className="div-location">{logement.location}</h2>
+                    <div className="section-1">
+                        <div className="div">
+                                <h1 className="div-title">{logement.title}</h1>
+                                <h2 className="div-location">{logement.location}</h2>
+                            <div className="div-tag-section">
+                                {(logement.tags).map((tag) =>
+                                <li key={tag} className="div-tag">{tag}</li>
+                                )}
+                            </div>
                         </div>
-                        <div className="div-host">
-                            <p className="div-name">{logement.host.name}</p>
-                            <img className="div-pic" src={logement.host.picture} alt="propietaire"/>
+                        <div className="div-2">
+                            <div className="div-host">
+                                <p className="div-name">{logement.host.name}</p>
+                                <img className="div-pic" src={logement.host.picture} alt="propietaire"/>
+                            </div>
+                            <Rating rating = {logement.rating}/>
                         </div>
-                    </div>
-                    <div className="div-2">
-                        <div className="div-tag-section">
-                            {(logement.tags).map((tag) =>
-                            <li key={tag} className="div-tag">{tag}</li>
-                            )}
-                        </div>
-                    <Rating rating = {logement.rating}/>
                     </div>
                     <div className="div-3">
                         <div className="div-folding-menu-small">

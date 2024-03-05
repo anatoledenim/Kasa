@@ -23,4 +23,23 @@
   font-size: 18px;
   font-weight: 500;
   color: black;
+}
+
+@media screen and (max-width: 375px) {
+  .error-div {
+    width: 335px;
+    height: 500px;
+    margin-bottom: 25px;
+  }
+  .error-div-title {
+    font-size: 96px;
+  }
+  .error-div-subtitle {
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .error-div-link {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Error.css.map */

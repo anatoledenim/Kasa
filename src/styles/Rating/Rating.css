@@ -11,4 +11,18 @@
 .rating-empty-star {
   width: 36px;
   height: 36px;
+}
+
+@media screen and (max-width: 375px) {
+  .rating {
+    width: 98px;
+  }
+  .rating-full-star {
+    width: 18px;
+    height: 18px;
+  }
+  .rating-empty-star {
+    width: 18px;
+    height: 18px;
+  }
 }/*# sourceMappingURL=Rating.css.map */

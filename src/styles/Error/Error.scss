@@ -24,3 +24,22 @@
         color: black;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .error-div {
+        width: 335px;
+        height: 500px;
+        margin-bottom: 25px;
+        &-title {
+            font-size: 96px;
+        }
+        &-subtitle {
+            width: 300px;
+            text-align: center;
+            font-size: 18px;
+        }
+        &-link {
+            font-size: 14px;
+        }
+    }    
+}
