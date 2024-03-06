@@ -14,7 +14,7 @@
         justify-content: space-around;
         padding-top: 10px;
         width: 309px;
-        height: 80px;
+        height: 75px;
     }
     &-accueil, &-apropos {
         font-size: 24px;
@@ -23,11 +23,10 @@
         text-decoration: none;
         color: black;
         font-family: "Montserrat", sans-serif;
-        &:hover {
-            cursor: pointer;
-            border-bottom: 2px black solid;
-        }
-    }
+    } 
+}
+.underline-link {
+    border-bottom: 2px black solid;
 }
 
 @media screen and (max-width: 375px) {

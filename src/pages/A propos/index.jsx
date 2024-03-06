@@ -24,7 +24,7 @@ function Apropos() {
             <BackgroundPanel src = {backgroundImageApropos} title = "" alt = "paysage de bannière page a propos"/>
             <div className="div-folding-menu">
             {datas.map((data) =>
-            <FoldingMenu title={data.title} children={data.content}/>
+            <FoldingMenu key={data.id} title={data.title} children={data.content}/>
             )}
             </div>
         </div>
